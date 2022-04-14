@@ -14,7 +14,7 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
 
     useEffect(() => {
         setTempo()
-        setMudancaSegundos(mudancaSegundos === true ? false : true)
+        setMudancaSegundos(false)
     }, [segundos, minutos, horas, dias])
 
 
