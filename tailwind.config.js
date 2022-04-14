@@ -9,7 +9,7 @@ module.exports = {
         'casamento': {
           100: '#EAE4E9',
           200: '#FFF1E6',
-          300: '#FDE2E4',
+          300: '#ecbbcd',
           400: '#FAD2E1',
           500: '#E2ECE9',
           600: '#BEE1E6',
