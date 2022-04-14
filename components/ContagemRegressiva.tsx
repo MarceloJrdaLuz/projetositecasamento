@@ -14,9 +14,9 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
 
     useEffect(() => {
         setMudancaSegundos(false)
-    }, [segundos, minutos, horas, dias])
+    },[segundos, minutos, horas, dias])
 
-
+    setTempo()
     function setTempo() {
         setInterval(() => {
             const { dias, minutes, horas, seconds } = TempoRestante('2022-08-07')
