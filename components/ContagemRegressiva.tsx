@@ -59,8 +59,8 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
                 </div>
                 <div className="flex flex-wrap items-center w-5/12 m-2 h-full">
                     <div className="flex flex-wrap w-full h-5/6 justify-center relative">
-                        <div className={`w-full ${mudancaSegundos === true ? 'mb-0.5 border-r' : 'mb-1 border-r-0'} bg-casamento-300 rounded-t-sm`}></div>
-                        <div className={`w-full  bg-casamento-300 rounded-b-sm ${mudancaSegundos === true ? 'border-r' : 'border-r-0'}`}></div>
+                        <div className={`w-full ${mudancaSegundos === true ? 'mb-0.5 border-r duration-700' : 'mb-1 border-r-0 duration-700'} bg-casamento-300 rounded-t-sm`}></div>
+                        <div className={`w-full  bg-casamento-300 rounded-b-sm ${mudancaSegundos === true ? 'border-r duration-700' : 'border-r-0 duration-700'}`}></div>
                         <span className="absolute text-center text-4xl h-full top-3 text-white">{segundos}</span>
                     </div>
                     <div className="w-full text-center text-xl">Segundos</div>
