@@ -22,13 +22,13 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <main className='h-screen w-screen flex-col bg-casamento-900 overflow-auto'>
+      <main className='h-auto w-screen flex-col bg-casamento-900'>
         <MenuFixo letrasIniciais='P & E' transparente={transparente} />
         <Capa />
-        <div className='flex justify-center items-center w-full h-2/4'>
+        <div className='flex justify-center items-center w-full h-96'>
           <ContagemRegressiva />
         </div>
-        <div className='flex justify-center items-center mt-10'>
+        <div className='flex justify-center items-center mt-10 h-[36rem]'>
           <BoasVindas
             texto='Este site foi feito com muito carinho para que vocês possam viver esse dia alegre junto conosco e participar de pertinho de cada passo nosso até o grande dia! Veja um pouco de nossa história, como tudo começou. Aproveite nossa galeria de fotos. E assista nosso depoimento aos familiares e amigos. Esperamos que se sintam conectados conosco. Bem-vindos ao nosso Casamento!'
           />

@@ -7,7 +7,7 @@ interface BoasVindasProps{
 
 export default function BoasVindas(props: BoasVindasProps){
     return(
-        <div className="flex flex-wrap w-10/12 h-44 justify-center">
+        <div className="flex flex-wrap w-72 h-full justify-center">
             <h1 className="text-3xl min-w-[320px] text-center">Sejam Bem Vindos ao Nosso Site!</h1>
             <div className='h-28 w-40 -m-8'>
                 <Image src={divisor} alt='divisor de texto'/>

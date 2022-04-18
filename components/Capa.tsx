@@ -5,7 +5,7 @@ import TemaCapa from "./TemaCapa";
 
 export default function Capa (){
     return( 
-        <div className="container-capa flex justify-center items-center w-screen h-2/6 bg-casamento-300 relative">
+        <div className="container-capa flex justify-center items-center w-screen h-80 bg-casamento-300 relative">
             <TemaCapa/>
             <div className="bg-casamento-300 w-1/2 h-full">
 
