@@ -20,12 +20,12 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
     setTempo()
     function setTempo() {
         setInterval(() => {
-            const { dias, minutes, horas, seconds } = TempoRestante('2022-08-07')
-            setDias(dias)
-            setHoras(horas)
+            const { days, minutes, hours, seconds } = TempoRestante('2022-08-07')
+            setDias(days)
+            setHoras(hours)
             setMinutos(minutes)
             setMudancaSegundos(mudancaSegundos === true ? false : true)
-            setSegundos(seconds)
+            segundos !== seconds && setSegundos(seconds), setMudancaSegundos(true)
         }, 1000)
     }
 
