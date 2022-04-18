@@ -16,6 +16,7 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
         setMudancaSegundos(false)
     },[segundos, minutos, horas, dias])
 
+
     setTempo()
     function setTempo() {
         setInterval(() => {
@@ -27,6 +28,7 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
             setSegundos(seconds)
         }, 1000)
     }
+
     return (
         <div className="flex-col justify-center items-center w-3/4 h-72">
             <div className="text-3xl text-center max-w-[300px]">Contagem Regressiva para o Grande Dia</div>
