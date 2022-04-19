@@ -5,10 +5,12 @@ import Capa from '../components/Capa'
 import ContagemRegressiva from '../components/ContagemRegressiva'
 import { Footer } from '../components/Footer'
 import MenuFixo from '../components/MenuFixo'
+import useMenuShow from '../hooks/useMenuShow'
 
 const Home: NextPage = () => {
 
   const [transparente, setTransparente] = useState(true)
+  const {menuShow, setMenuShow} = useMenuShow()
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -20,10 +22,12 @@ const Home: NextPage = () => {
     })
   }, [])
 
+  console.log(menuShow)
+
   return (
     <>
       <main className='h-auto w-screen flex-col bg-casamento-900'>
-        <MenuFixo letrasIniciais='P & E' transparente={transparente} />
+        <MenuFixo letrasIniciais='P & E' transparente={transparente} menu={menuShow} onClick={()=> setMenuShow(menuShow === true ? false : true)} />
         <Capa />
         <div className='flex justify-center items-center w-full h-96'>
           <ContagemRegressiva />
