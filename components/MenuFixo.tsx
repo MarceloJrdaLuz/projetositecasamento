@@ -9,14 +9,14 @@ import 'next/image'
 interface MenuFixoProps {
     letrasIniciais: string
     transparente: boolean
-    menu: boolean
+    menu?: boolean
     onClick: ()=>void
 }
 
 export default function MenuFixo(props: MenuFixoProps) {
     const {menuShow, setMenuShow} = useMenuShow()
     return (
-        <nav className={`fixed flex justify-between h-12 w-screen ${props.transparente ? 'bg-transparent transition ease-in duration-100' : 'bg-casamento-900 border-b border-[#9b6c14] transition ease-out duration-100'} z-40`}>
+        <nav className={`fixed top-0 flex justify-between h-14 w-screen ${props.transparente ? 'bg-transparent transition ease-in duration-100' : 'bg-casamento-900 border-b border-[#9b6c14] transition ease-out duration-100'} z-40`}>
             <div className={`p-3 font-bold ${props.transparente ? 'text-white' : 'text-black'}`}>{props.letrasIniciais}</div>
             <div className={`flex flex-wrap justify-center items-center w-10 h-9 p-2 mt-1`} onClick={props.onClick}>
                 {props.menu ? (
