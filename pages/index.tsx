@@ -44,9 +44,9 @@ const Home: NextPage = () => {
   return (
     <>
       <HeadComponent title='Página Inicial'/>
-      <main className='relative h-auto w-screen flex-col bg-casamento-900 overflow-y-auto'>
+      <main className='relative h-auto w-screen flex-col bg-casamento-900'>
         {menuShow && <MenuNavegacao/>}
-        <MenuFixo letrasIniciais='P & E' transparente={menuShow === true ? false : transparente} menu={menuShow} onClick={() => {setMenuShow(menuShow === false ? true : false), scrollToPosition()}} />
+        <MenuFixo letrasIniciais='P & E' transparente={menuShow === true ? false : transparente} menu={menuShow} onClick={() => {setMenuShow(menuShow === false ? true : false)}} />
           <div className={`${menuShow && 'hidden'}`}>
             <Capa />
             <div className='flex justify-center items-center w-full h-96'>
