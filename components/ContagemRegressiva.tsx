@@ -10,21 +10,18 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
     const [horas, setHoras] = useState<null | number>(null)
     const [minutos, setMinutos] = useState<null | number>(null)
     const [segundos, setSegundos] = useState<null | number>(null)
-    const [mudancaSegundos, setMudancaSegundos] = useState(false)
 
     useEffect(() => {
-        setMudancaSegundos(mudancaSegundos === false ? true : false)
-    },[segundos, minutos, horas, dias, mudancaSegundos])
+    },[segundos, minutos, horas, dias])
 
 
     setTempo()
     function setTempo() {
         setInterval(() => {
             const { days, minutes, hours, seconds } = TempoRestante('2022-08-07')
-            setDias(days)
-            setHoras(hours)
-            setMinutos(minutes)
-            segundos !== seconds && setMudancaSegundos(mudancaSegundos === false ? true : false)
+            dias !== days && setDias(days)
+            horas !== hours && setHoras(hours)
+            minutos !== minutes && setMinutos(minutes)
             segundos !== seconds && setSegundos(seconds)
         }, 1000)
     }
@@ -59,9 +56,9 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
                 </div>
                 <div className="flex flex-wrap items-center w-5/12 m-2 h-full">
                     <div className="flex flex-wrap w-full h-5/6 justify-center relative">
-                        <div className={`w-full ${mudancaSegundos === true ? 'mb-0.5 border-r duration-700' : 'mb-1 border-r-0 duration-700'} bg-casamento-300 rounded-t-sm`}></div>
-                        <div className={`w-full  bg-casamento-300 rounded-b-sm ${mudancaSegundos === true ? 'border-r duration-700' : 'border-r-0 duration-700'}`}></div>
-                        <span className="absolute text-center text-4xl h-full top-3 text-white">{segundos}</span>
+                        <div className={`w-full ${segundos !== null && segundos % 2 === 0 ? 'mb-1 border-r-0' : 'mb-0.5 border-r'} bg-casamento-300 rounded-t-sm`}></div>
+                        <div className={`w-full  bg-casamento-300 rounded-b-sm ${segundos !== null && segundos % 2 === 0 ? 'border-r-0' : 'border-r'}`}></div>
+                        <span className={`absolute text-center text-4xl h-full top-3 text-white`}>{segundos}</span>
                     </div>
                     <div className="w-full text-center text-xl">Segundos</div>
                 </div>
