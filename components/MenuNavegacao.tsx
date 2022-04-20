@@ -53,7 +53,7 @@ export default function MenuNavegacao() {
 
     return (
         <div className={`h-auto overflow-y-auto pt-14 flex justify-between flex-wrap bg-casamento-900`}>
-            <div className="paginas h-screen">
+            <div className="paginas h-screen w-screen">
                 <SecaoMenu texto='Páginas' paginasVisivel={paginasVisivel} onClick={() => setPaginasVisivel(paginasVisivel === true ? false : true)} />
                 {paginasVisivel && <ul>
                     {renderItensPaginas()}
