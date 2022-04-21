@@ -4,6 +4,10 @@
   font-family: 'Beau Rivage';
   src: url('../fonts/BeauRivage-Regular.ttf');
 }
+@font-face {
+  font-family: 'Ultra';
+  src: url('../fonts/Ultra-Regular.ttf');
+}
 @tailwind utilities;
 
 html,

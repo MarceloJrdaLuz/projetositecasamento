@@ -19,7 +19,8 @@ module.exports = {
         }
       },
       fontFamily:{
-        'Beau Rivage': ['Beau Rivage']
+        'Beau Rivage': ['Beau Rivage'],
+        'Ultra': ['Ultra']
       }
     },
   },
