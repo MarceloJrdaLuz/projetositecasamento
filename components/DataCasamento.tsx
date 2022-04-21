@@ -9,7 +9,7 @@ export default function DataCasamento(props: DataCasamentoProps){
             <div className={`text-[26px] font-['Ultra'] text-white font-extrabold tracking-widest`}>
                 {props.data}
             </div>
-            <div className={`bg-transparent absolute text-xl text-[#9b6c14] tracking-wider`}>
+            <div className={`bg-transparent absolute text-2xl text-[#9b6c14] tracking-wider`}>
                 {props.nomeCasal}
             </div>
         </div>
