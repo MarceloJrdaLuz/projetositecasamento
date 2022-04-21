@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import divisor from '../public/divisord.png'
+import Botao from './Botao'
 import TextArea from './TextArea'
 
 
@@ -25,6 +26,7 @@ export default function Mensagem(props: DeixeSuaMensagemProps){
 
                 <p className={`w-screen flex justify-center items-center text-center text-3xl h-fit`}>{props.texto}</p>
                 <TextArea/>
+                <Botao titulo='Enviar' onClick={()=>{}}/>
             </div>
         </section>
     )

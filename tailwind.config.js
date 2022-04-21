@@ -16,6 +16,9 @@ module.exports = {
           700: '#F0EFEB',
           800: '#DFE7FD',
           900: '#f6f6f0',
+        },
+        'dourado': {
+          100: '#9b6c14'
         }
       },
       fontFamily:{
