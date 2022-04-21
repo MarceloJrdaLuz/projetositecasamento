@@ -4,7 +4,7 @@ import Maos from '../svg/MaosDouradas.svg'
 
 export function Footer() {
     return (
-        <footer className='absolute bottom-auto flex justify-center items-center bg-casamento-900 border-t border-[#9b6c14] mt-16 p-5'>
+        <footer className='flex justify-center items-center bg-casamento-900 border-t border-[#9b6c14] mt-16 mb-5 p-5'>
             <div className="flex w-1/2 min-w-[200px] h-20 rounded-full">
                 <div className="flex justify-center items-center w-1/2">
                     <span className="pb-6 text-2xl text-[#9b6c14] font-bold">P</span>

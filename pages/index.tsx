@@ -23,7 +23,7 @@ const Home: NextPage = () => {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 30) {
         setTransparente(false)
-        setPositionPage(window.scrollY)
+        window.scrollY > 150 && setPositionPage(window.scrollY)
       } else {
         setTransparente(true)
       }
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
 
   function scrollToPosition() {
     window.scrollTo({
-      top: positionPage,
+      top: menuShow === false ? positionPage : 0,
       behavior: 'smooth'
     })
   }

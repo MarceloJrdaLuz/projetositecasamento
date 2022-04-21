@@ -10,7 +10,7 @@ export default function GaleriaDeFotos() {
         <>
             <HeadComponent title='Galeria de Fotos' />
             <main className={`flex h-screen relative`}>
-                <MenuFixo letrasIniciais="P & E" transparente={false} onClick={() => setMenuShow(menuShow === true ? false : true)} />
+                <MenuFixo menu={menuShow} letrasIniciais="P & E" transparente={false} onClick={() => setMenuShow(menuShow === true ? false : true)} />
                 {menuShow && <MenuNavegacao />}
                 <div className={`${menuShow && 'hidden'} h-screen`}>
                     <div className="h-full flex items-end">
