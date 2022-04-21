@@ -9,7 +9,9 @@ interface DeixeSuaMensagemProps{
     subtitulo: string
     texto: string
 }
+
 export default function Mensagem(props: DeixeSuaMensagemProps){
+    
     return(
         <section className={`w-screen h-auto flex-col justify-center items-center mt-14`}>
             <div className={`flex-col justify-between items-center w-full h-auto`}>

@@ -19,6 +19,9 @@ module.exports = {
         },
         'dourado': {
           100: '#9b6c14'
+        },
+        'botao': {
+          100: '#ecbbcd84'
         }
       },
       fontFamily:{
