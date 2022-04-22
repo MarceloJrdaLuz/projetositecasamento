@@ -20,8 +20,8 @@ export default function MenuNavegacao() {
                 <Link href={'/mensagemaosnoivos'} passHref>
                     <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Mensagem aos Noivos' && 'bg-white'}`}>Mensagem aos Noivos</li>
                 </Link>
-                <Link href={'/depoimentodocasal'} passHref>
-                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Depoimento do Casal' && 'bg-white'}`}>Depoimento do Casal</li>
+                <Link href={'/mensagemdanoiva'} passHref>
+                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Depoimento do Casal' && 'bg-white'}`}>Mensagem da Noiva</li>
                 </Link>
                 <Link href={'/galeriadefotos'} passHref>
                     <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Galeria de Fotos' && 'bg-white'}`}>Galeria de Fotos</li>
