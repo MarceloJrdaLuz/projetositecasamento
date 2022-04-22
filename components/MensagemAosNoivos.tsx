@@ -1,7 +1,5 @@
 import Image from 'next/image'
-import useMensagemAosNoivos from '../hooks/useMensagemAosNoivos'
 import divisor from '../public/divisord.png'
-import Botao from './Botao'
 import TextArea from './TextArea'
 
 
@@ -13,13 +11,6 @@ interface DeixeSuaMensagemProps{
 
 export default function Mensagem(props: DeixeSuaMensagemProps){
 
-    const {mensagem, link, setLink } = useMensagemAosNoivos()
-
-    function gerarLink(){
-       setLink(`https://api.whatsapp.com/send?phone=556681420394&text=${mensagem}`) 
-    }
-
- 
     return(
         <section className={`w-screen h-auto flex-col justify-center items-center mt-14`}>
             <div className={`flex-col justify-between items-center w-full h-auto`}>
@@ -35,8 +26,7 @@ export default function Mensagem(props: DeixeSuaMensagemProps){
                 </h2>
 
                 <p className={`w-screen flex justify-center items-center text-center text-3xl h-fit`}>{props.texto}</p>
-                <TextArea onChange={()=>gerarLink()}/>
-                {/* <Botao link={link} titulo='Enviar' onClick={()=>{gerarLink()}}/> */}
+                <TextArea/>
             </div>
         </section>
     )
