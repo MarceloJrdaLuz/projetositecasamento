@@ -5,9 +5,17 @@ import MenuFixo from "../components/MenuFixo"
 import MenuNavegacao from "../components/MenuNavegacao"
 import useMenuShow from "../hooks/useMenuShow"
 import Mensagem from "../components/MensagemAosNoivos"
+import useMensagemAosNoivos from "../hooks/useMensagemAosNoivos"
+import { useEffect } from "react"
 
 export default function MensagemAosNoivos() {
     const { menuShow, setMenuShow } = useMenuShow()
+    const {mensagem} = useMensagemAosNoivos()
+
+    useEffect(()=>{
+        console.log(mensagem)
+    }, [mensagem])
+
     return (
         <>
             <HeadComponent title='Mensagem aos Noivos' />
