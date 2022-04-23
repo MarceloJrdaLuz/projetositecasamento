@@ -29,7 +29,7 @@ export default function ListaPresentes(props: ListaPresentesProps) {
                     {props.opcao1}
                 </p>
                 <Link href='https://finalfeliz.de/palomaeverton02/' passHref>
-                    <span className={`w-screen flex justify-center items-center text-center text-3xl h-fit  p-8 underline text-casamento-600`}>Lista de Presentes</span>
+                    <span className={`w-screen flex justify-center items-center text-center text-3xl h-fit  p-8 underline text-gray-600`}>Lista de Presentes</span>
                 </Link>
                 <p className={`w-screen flex justify-center items-center text-center text-3xl h-fit  p-8`}>
                     {props.opcao2}
