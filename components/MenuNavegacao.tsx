@@ -26,9 +26,6 @@ export default function MenuNavegacao() {
                 <Link href={'/galeriadefotos'} passHref>
                     <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Galeria de Fotos' && 'bg-white'}`}>Galeria de Fotos</li>
                 </Link>
-                <Link href={'/cerimonia'} passHref>
-                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Cerimônia' && 'bg-white'}`}>Cerimônia</li>
-                </Link>
             </>
         )
     }

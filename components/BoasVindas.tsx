@@ -12,7 +12,7 @@ export default function BoasVindas(props: BoasVindasProps){
             <div className='h-28 w-40 -m-8'>
                 <Image src={divisor} alt='divisor de texto'/>
             </div>
-            <p className="text-2xl text-center my-10">A melhor forma de compartilhar esse momento é vivendo juntos esse sonho</p>
+            <p className="text-2xl text-center my-10">A melhor forma de compartilhar esse momento é vivendo juntos esse sonho.</p>
             <p className="text-center text-2xl h-fit">{props.texto}</p>
         </div>
     )

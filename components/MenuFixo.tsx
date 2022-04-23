@@ -17,7 +17,7 @@ interface MenuFixoProps {
 export default function MenuFixo(props: MenuFixoProps) {
     const { menuShow, setMenuShow } = useMenuShow()
     return (
-        <nav className={`fixed top-0 flex justify-between h-14 w-screen ${props.transparente ? 'bg-transparent transition duration-1000' : 'bg-casamento-900 border-b border-[#9b6c14] transition duration-500'} z-40`}>
+        <nav className={`fixed top-0 flex justify-between h-14 w-screen ${props.transparente ? 'bg-transparent transition duration-1000' : 'bg-casamento-900 border-b border-dourado-100 transition duration-500'} z-40`}>
             <Link href={'/'} passHref>
                 <div className={`p-4 font-bold ${props.transparente ? 'text-white' : 'text-black'}`}>{props.letrasIniciais}</div>
             </Link>

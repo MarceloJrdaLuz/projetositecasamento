@@ -10,14 +10,10 @@ import MenuNavegacao from '../components/MenuNavegacao'
 import useMenuShow from '../hooks/useMenuShow'
 
 const Home: NextPage = () => {
-
-  
   
   const [transparente, setTransparente] = useState(true)
   const { menuShow, setMenuShow } = useMenuShow()
   const [positionPage, setPositionPage] = useState(0)
-
-  
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
