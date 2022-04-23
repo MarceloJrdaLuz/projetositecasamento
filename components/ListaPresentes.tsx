@@ -7,7 +7,7 @@ interface ListaPresentesProps {
     subtitulo: string
     opcao1: string
     opcao2: string
-    chavePix: string | number
+    chavePix: string
 }
 
 export default function ListaPresentes(props: ListaPresentesProps) {

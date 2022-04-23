@@ -19,9 +19,9 @@ export default function ListadePresentes() {
                     <ListaPresentes
                         titulo="Lista de Presentes"
                         subtitulo="Queridos irmãos visto que estou me mudando para o Paraná não teremos como levar nenhum objeto conosco. Por esse motivo eu gostaria de pedir a compreensão de todos que desejarem nos dar um presente, que possam fazer isso pelos meios abaixo. Agradeço a compreensão de todos."
-                        opcao1="No link abaixo vocês encontrarão uma lista de presentes que fizemos. Ao comprarem nesse link, que é totalmente seguro, receberemos o seu presente diretamente em nossa casa."
+                        opcao1="No link abaixo vocês encontrarão uma lista de presentes que fizemos. Ao comprarem nesse link, que foi criado no site da Magalu, receberemos o seu presente diretamente em nossa casa."
                         opcao2="Se desejarem nos presentear em dinheiro podem fazer isso por meio do pix abaixo."
-                        chavePix="palomasts.menezes@hotmail.com"
+                        chavePix="445.233.668-02"
                     />
                     <div className="flex">
                         <Footer />
