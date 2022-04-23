@@ -32,15 +32,6 @@ export default function MenuNavegacao() {
             </>
         )
     }
-    function renderConfirmacao() {
-        return (
-            <>
-                <Link href={'/confirmarpresenca'} passHref>
-                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Confirme sua Presença' && 'bg-white'}`}>Confirme sua Presença</li>
-                </Link>
-            </>
-        )
-    }
     function renderListaPresentes() {
         return (
             <>
@@ -58,12 +49,6 @@ export default function MenuNavegacao() {
                 {paginasVisivel && <ul>
                     {renderItensPaginas()}
                 </ul>}
-                <div className="confirmacao h-auto">
-                    <SecaoMenu texto='Confirme sua presença' confirmarPresencaVisivel={confirmarPresencaVisivel} onClick={() => setConfirmarPresencaVisivel(confirmarPresencaVisivel === true ? false : true)} />
-                    {confirmarPresencaVisivel && <ul>
-                        {confirmarPresencaVisivel && renderConfirmacao()}
-                    </ul>}
-                </div>
                 <div className="presentes h-auto">
                     <SecaoMenu texto='Lista de Presentes' listaPresentesVisivel={listaPresentesVisivel} onClick={() => setListaPresentesVisivel(listaPresentesVisivel === true ? false : true)} />
                     {listaPresentesVisivel && <ul>

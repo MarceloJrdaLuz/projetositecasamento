@@ -8,7 +8,7 @@ export default function Capa (){
     return( 
         <div className="container-capa flex justify-center items-center w-screen h-80 bg-casamento-300 relative">
             <TemaCapa/>
-            <div className="flex justify-end items-end bg-casamento-300 w-1/2 h-full">
+            <div className="flex justify-center items-end w-1/2 h-full">
                 <DataCasamento data={`07 08 2022`} nomeCasal="Paloma & Everton"/>
             </div>
             <div className="w-1/2 h-full">
