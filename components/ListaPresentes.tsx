@@ -34,7 +34,10 @@ export default function ListaPresentes(props: ListaPresentesProps) {
                 <p className={`w-screen flex justify-center items-center text-center text-3xl h-fit  p-8`}>
                     {props.opcao2}
                 </p>
-                <span className={`w-screen flex justify-center items-center text-center text-3xl h-fit  p-8`}>
+                <span className={`w-screen flex justify-center items-center text-center text-3xl h-fit  p-2`}>
+                    Everton José Pais
+                </span>
+                <span className={`w-screen flex justify-center items-center text-center text-xl h-fit  p-2`}>
                     {props.chavePix}
                 </span>
             </div>
