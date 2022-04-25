@@ -14,7 +14,7 @@ export default function GaleriaDeFotos() {
                 <MenuFixo menu={menuShow} letrasIniciais="P & E" transparente={false} onClick={() => setMenuShow(menuShow === true ? false : true)} />
                 {menuShow && <MenuNavegacao />}
                 <div className={`${menuShow && 'hidden'} flex-col h-screen w-screen overflow-hidden`}>
-                    <Fotos/>
+                   <Fotos/>
                     <div className="flex">
                         <Footer />
                     </div>
