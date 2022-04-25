@@ -1,3 +1,7 @@
+import { useEffect, useState } from "react"
+
+
+
 export default function Fotos() {
     const fotos = [
         { foto: 'https://drive.google.com/uc?export=view&id=0B1jZK_xlxvEceGRuMzJTaktFUTA' },
@@ -8,9 +12,20 @@ export default function Fotos() {
         { foto: 'https://drive.google.com/uc?export=view&id=0B1jZK_xlxvEceGRuMzJTaktFUTA' },
     ]
 
+    // const [scrollPos, setScrollX] = useState(0)
+
+    // useEffect(()=>{
+    //     const onScroll = ()=>setScrollX(window.scrollX)
+    //     // window.removeEventListener('scroll', onScroll)
+    //     window.addEventListener('scroll', onScroll, {passive: true})
+    //     return ()=> window.removeEventListener('scroll', onScroll)
+    // },[])
+
+    // console.log(scrollPos)
+
     function renderMiniaturas() {
         return (fotos.map((foto, i) => (
-            <div className={`w-40 mr-1`} key={i}>
+            <div id={`${i}`} className={`w-40 mr-1`} key={i}>
                 <img className={`h-full w-full object-cover brightness-50 hover:brightness-100`} src={`${foto.foto}`} alt={`${i}`} key={i} />
             </div>
         ))
@@ -18,7 +33,7 @@ export default function Fotos() {
     }
     function renderFotos() {
         return (fotos.map((foto, i) => (
-            <div className={`w-screen mr-1`} key={i}>
+            <div id={`${i}`} className={`w-screen mr-1`} key={i}>
                 <img className={`h-full w-full object-cover brightness-50 hover:brightness-100`} src={`${foto.foto}`} alt={`${i}`} key={i} />
             </div>
         ))
@@ -26,10 +41,12 @@ export default function Fotos() {
     }
     return (
         <>
-            <section className={`flex w-fit h-5/6`}>
-                {renderFotos()}
+            <section className={`flex w-screen h-5/6 overflow-scroll`}>
+                <div className={`flex w-fit`}>
+                    {renderFotos()}
+                </div>
             </section>
-            <aside className={`flex m-1 w-screen h-40`}>
+            <aside className={`flex m-1 w-screen h-40 overflow-scroll`}>
                 <div className={`flex w-fit `}>
                     {renderMiniaturas()}
                 </div>

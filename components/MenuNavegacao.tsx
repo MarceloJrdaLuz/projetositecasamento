@@ -5,7 +5,6 @@ import SecaoMenu from './SecaoMenu'
 export default function MenuNavegacao() {
 
     const [paginasVisivel, setPaginasVisivel] = useState(true)
-    const [confirmarPresencaVisivel, setConfirmarPresencaVisivel] = useState(false)
     const [listaPresentesVisivel, setListaPresentesVisivel] = useState(false)
 
     function renderItensPaginas() {
