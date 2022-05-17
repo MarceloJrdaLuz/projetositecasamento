@@ -10,6 +10,11 @@ import MenuNavegacao from '../components/MenuNavegacao'
 import useMenuShow from '../hooks/useMenuShow'
 
 const Home: NextPage = () => {
+
+  useEffect(() =>
+    {        
+        document.body.classList.add("scrollbar");
+    });
   
   const [transparente, setTransparente] = useState(true)
   const { menuShow, setMenuShow } = useMenuShow()

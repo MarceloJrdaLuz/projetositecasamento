@@ -11,19 +11,19 @@ export default function MenuNavegacao() {
         return (
             <>
                 <Link href={'/'} passHref>
-                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Página Inicial' && 'bg-white'}`}>Página Inicial</li>
+                    <li className={`cursor-pointer py-3 pl-5 text-2xl w-screen ${document.title === 'Página Inicial' && 'bg-white'}`}>Página Inicial</li>
                 </Link>
                 <Link href={'/nossahistoria'} passHref>
-                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Nossa História' && 'bg-white'}`}>Nossa História</li>
+                    <li className={`cursor-pointer py-3 pl-5 text-2xl w-screen ${document.title === 'Nossa História' && 'bg-white'}`}>Nossa História</li>
                 </Link>
                 <Link href={'/mensagemaosnoivos'} passHref>
-                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Mensagem aos Noivos' && 'bg-white'}`}>Mensagem aos Noivos</li>
+                    <li className={`cursor-pointer py-3 pl-5 text-2xl w-screen ${document.title === 'Mensagem aos Noivos' && 'bg-white'}`}>Mensagem aos Noivos</li>
                 </Link>
                 <Link href={'/mensagemdanoiva'} passHref>
-                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Depoimento do Casal' && 'bg-white'}`}>Mensagem da Noiva</li>
+                    <li className={`cursor-pointer py-3 pl-5 text-2xl w-screen ${document.title === 'Depoimento do Casal' && 'bg-white'}`}>Mensagem da Noiva</li>
                 </Link>
                 <Link href={'/galeriadefotos'} passHref>
-                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Galeria de Fotos' && 'bg-white'}`}>Galeria de Fotos</li>
+                    <li className={`cursor-pointer py-3 pl-5 text-2xl w-screen ${document.title === 'Galeria de Fotos' && 'bg-white'}`}>Galeria de Fotos</li>
                 </Link>
             </>
         )
@@ -32,14 +32,14 @@ export default function MenuNavegacao() {
         return (
             <>
                 <Link href={'/listadepresentes'} passHref>
-                    <li className={`py-3 pl-5 text-2xl w-screen ${document.title === 'Lista de Presentes' && 'bg-white'}`}>Lista de Presentes</li>
+                    <li className={`cursor-pointer py-3 pl-5 text-2xl w-screen ${document.title === 'Lista de Presentes' && 'bg-white'}`}>Lista de Presentes</li>
                 </Link>
             </>
         )
     }
 
     return (
-        <div className={`h-auto overflow-y-auto pt-14 flex justify-between flex-wrap bg-casamento-900`}>
+        <div className={`h-auto overflow-y-auto scrollbar pt-14 sm:pt-20 flex justify-between flex-wrap bg-casamento-900`}>
             <div className="paginas h-screen w-screen">
                 <SecaoMenu texto='Páginas' paginasVisivel={paginasVisivel} onClick={() => setPaginasVisivel(paginasVisivel === true ? false : true)} />
                 {paginasVisivel && <ul>

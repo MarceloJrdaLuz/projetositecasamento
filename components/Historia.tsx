@@ -28,9 +28,9 @@ export default function Historia(props: HistoriaProps) {
                     {props.texto}
                 </p>
             </div>
-            <div className={`flex justify-center items-center w-screen h-72 p-2 relative shadow-2xl`}>
-                <div className={`flex w-full h-72`}>
-                    <Image src={foto} alt='Video' objectFit="cover" />
+            <div className={`flex justify-center items-center w-screen h-80 sm:h-[600px] p-2 relative shadow-2xl`}>
+                <div className={`flex w-11/12 m-auto h-full`}>
+                    <Image src={foto} alt='Video' objectFit="cover"/>
                 </div>
                 <div className={`absolute w-28 h-28`}>
                     <Image src={play} alt='Botão Play'/>

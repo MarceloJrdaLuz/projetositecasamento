@@ -28,7 +28,7 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
 
     return (
         <div className="flex-col justify-center items-center w-3/4 h-72">
-            <div className="text-3xl text-center max-w-[300px]">Contagem Regressiva para o Grande Dia</div>
+            <div className="text-3xl md:text-4xl text-center max-w-[300px] m-auto">Contagem Regressiva para o Grande Dia</div>
             <div className="flex flex-wrap  w-full h-2/5 justify-between p-5">
                 <div className="flex flex-wrap items-center w-5/12 m-2 h-full">
                     <div className="flex flex-wrap w-full h-5/6 justify-center relative">
