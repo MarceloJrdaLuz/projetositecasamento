@@ -25,20 +25,22 @@ export default function Fotos() {
 
     function renderizarFotosScreen(id = 0) {
         return (
-            <div className="flex-col justify-center items-center h-full">
-                <div onClick={() => setScreen(false)} className="absolute right-2 z-50 w-10 p-2">
+            <>
+                <div onClick={() => setScreen(false)} className="absolute top-1 right-1 z-50 w-10 p-2">
                     <Image src={Fechar} alt='Botao fechar' />
                 </div>
-                <div className={`flex h-full w-screen items-center relative`}>
-                    <Image unoptimized={true} objectFit="scale-down" layout='fill' src={`${fotos[fotoDestaque].foto}`} alt={`Foto ${fotos[fotoDestaque].foto}`} />
-                    <div onClick={() => setFotoDestaque(fotoDestaque !== 0 ? fotoDestaque - 1 : fotoDestaque + fotos.length - 1)} className="flex justify-center absolute w-10 h-28 bg-transparent hover:bg-[#cccccc37] cursor-pointer">
-                        <Image src={Back} alt='Seta Voltar' />
-                    </div>
-                    <div onClick={() => setFotoDestaque(fotoDestaque === fotos.length - 1 ? fotoDestaque - fotos.length + 1 : fotoDestaque + 1)} className="flex justify-center absolute w-10 h-28 bg-transparent right-0 hover:bg-[#cccccc37] cursor-pointer transition">
-                        <Image src={Proximo} alt='Seta Proximo' />
+                <div className="flex-col justify-center items-center h-full xs:h-5/6">
+                    <div className={`flex h-full w-screen items-center relative`}>
+                        <Image unoptimized={true} objectFit="scale-down" layout='fill' src={`${fotos[fotoDestaque].foto}`} alt={`Foto ${fotos[fotoDestaque].foto}`} />
+                        <div onClick={() => setFotoDestaque(fotoDestaque !== 0 ? fotoDestaque - 1 : fotoDestaque + fotos.length - 1)} className="flex justify-center absolute w-10 h-28 p-2 sm:p-0 bg-transparent hover:bg-[#cccccc37] cursor-pointer">
+                            <Image src={Back} alt='Seta Voltar' />
+                        </div>
+                        <div onClick={() => setFotoDestaque(fotoDestaque === fotos.length - 1 ? fotoDestaque - fotos.length + 1 : fotoDestaque + 1)} className="flex justify-center absolute w-10 h-28 p-2 sm:p-0 bg-transparent right-0 hover:bg-[#cccccc37] cursor-pointer transition">
+                            <Image src={Proximo} alt='Seta Proximo' />
+                        </div>
                     </div>
                 </div>
-            </div>
+            </>
         )
     }
     return (
