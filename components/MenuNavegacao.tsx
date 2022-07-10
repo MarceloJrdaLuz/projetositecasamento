@@ -25,6 +25,9 @@ export default function MenuNavegacao() {
                 <Link href={'/galeriadefotos'} passHref>
                     <li className={`cursor-pointer py-3 pl-5 text-2xl w-screen ${document.title === 'Galeria de Fotos' && 'bg-white'}`}>Galeria de Fotos</li>
                 </Link>
+                <Link href={'/listadepresentes'} passHref>
+                    <li className={`cursor-pointer py-3 pl-5 text-2xl w-screen ${document.title === 'Lista de Presentes' && 'bg-white'}`}>Lista de Presentes</li>
+                </Link>
             </>
         )
     }
@@ -45,12 +48,12 @@ export default function MenuNavegacao() {
                 {paginasVisivel && <ul>
                     {renderItensPaginas()}
                 </ul>}
-                <div className="presentes h-auto">
+                {/* <div className="presentes h-auto">
                     <SecaoMenu texto='Lista de Presentes' listaPresentesVisivel={listaPresentesVisivel} onClick={() => setListaPresentesVisivel(listaPresentesVisivel === true ? false : true)} />
                     {listaPresentesVisivel && <ul>
                         {listaPresentesVisivel && renderListaPresentes()}
                     </ul>}
-                </div>
+                </div> */}
             </div>
         </div>
     )

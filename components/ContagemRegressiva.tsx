@@ -1,9 +1,9 @@
+import moment, { isMoment } from "moment"
 import { useEffect, useState } from "react"
 import TempoRestante from '../functions/TempoRestante'
 
 interface ContagemRegressivaProps {
 }
-
 export default function ContagemRegressiva(props: ContagemRegressivaProps) {
 
     const [dias, setDias] = useState<null | number>(null)
@@ -11,8 +11,11 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
     const [minutos, setMinutos] = useState<null | number>(null)
     const [segundos, setSegundos] = useState<null | number>(null)
 
+    const [diaDoCasamento, setDiaDoCasamento] = useState(false)
+
     useEffect(() => {
-    },[segundos, minutos, horas, dias])
+        moment().format('YYYY-MM-DD') === '2022-07-30' && setDiaDoCasamento(true)
+    },[segundos])
 
 
     setTempo()
@@ -28,7 +31,8 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
 
     return (
         <div className="flex-col justify-center items-center w-3/4 h-72">
-            <div className="text-3xl md:text-4xl text-center max-w-[300px] m-auto">Contagem Regressiva para o Grande Dia</div>
+            <div className="text-3xl md:text-4xl text-center max-w-[300px] m-auto pb-4">Contagem Regressiva para o Grande Dia</div>
+            {!diaDoCasamento ? (
             <div className="flex flex-wrap  w-full h-2/5 justify-between p-5">
                 <div className="flex flex-wrap items-center w-5/12 m-2 h-full">
                     <div className="flex flex-wrap w-full h-5/6 justify-center relative">
@@ -62,7 +66,10 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
                     </div>
                     <div className="w-full text-center text-xl">Segundos</div>
                 </div>
-            </div>
+            </div>):
+            (
+                <div className="flex justify-center items-center w-full p-24 text-5xl lg:text-6xl bg-casamento-300 text-white rounded-xl shadow-lg">O grande dia chegou</div>
+            )}
         </div>
     )
 }
