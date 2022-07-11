@@ -9,7 +9,7 @@ export default function BoasVindas(props: BoasVindasProps){
     return(
         <div className="flex flex-wrap w-72 sm:w-7/12 h-fit justify-center items-center">
             <div className='flex md:flex-col flex-wrap justify-center items-center'>
-                <h1 className="text-3xl sm:text-4xl min-w-[320px] text-center">Sejam Bem Vindos ao Nosso Site!</h1>
+                <h1 className="text-3xl w-screen sm:text-4xl min-w-[320px] text-center">Sejam Bem Vindos ao Nosso Site!</h1>
                 <div className='h-28 w-40 -m-8'>
                     <Image src={divisor} alt='divisor de texto'/>
                 </div>
