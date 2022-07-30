@@ -68,7 +68,7 @@ export default function ContagemRegressiva(props: ContagemRegressivaProps) {
                 </div>
             </div>):
             (
-                <div className="flex justify-center items-center w-full p-14 md:p-24 text-5xl lg:text-6xl bg-casamento-300 text-white rounded-xl shadow-lg">O grande dia chegou</div>
+                <div className="flex justify-center items-center w-full p-14 md:p-24 text-center text-5xl lg:text-6xl bg-casamento-300 text-white rounded-xl shadow-lg">O grande dia chegou</div>
             )}
         </div>
     )
